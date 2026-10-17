@@ -37,20 +37,9 @@ xpp/                  the method as an importable package
   model.py            ResNet-50 encoder, partial fine-tuning, whole-image features
   evaluation.py       cross-slide and image-level few-shot episodes, nearest-prototype accuracy
   presets.py          one named configuration per row of the paper's tables
-scripts/              command-line programs
-  prepare_data.py     original images -> prepared dataset (scale bar removed, names hidden)
-  train.py            train + validate + test one configuration
-  summarize.py        table of all runs (mean +- sd over seeds), optional CSV
-  paired_differences.py  paired comparisons across splits and seeds
-  audit_positives.py  precision / similarity of candidate positive sources (no training)
-  rename_old_runs.py  map run folders of the pre-release code to the preset names
-analysis/             analyses of trained encoders (invariance, per-type accuracy, Grad-CAM, t-SNE)
-experiments/          one shell script per group of experiments in the paper
-paper_figures/        figures of the paper (shared style in paper_style.py)
+
 diagnosis/            miniImageNet diagnosis of Section 4 (PETD and ProtoCLR oracles)
-tests/                synthetic data + end-to-end smoke test (CPU, a few minutes)
-results/              numbers reported in the paper (paper_results.csv)
-docs/                 tutorial, user guide, data description, reproduction guide
+
 ```
 
 ## Installation
