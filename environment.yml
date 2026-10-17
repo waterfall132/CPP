@@ -1,0 +1,18 @@
+# conda env create -f environment.yml && conda activate xpp
+name: xpp
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.3
+  - torchvision=0.18
+  - pytorch-cuda=12.1      # remove this line for a CPU-only install
+  - numpy
+  - pillow
+  - matplotlib
+  - scikit-learn
+  - tqdm
+  - pandas
+  - scipy
